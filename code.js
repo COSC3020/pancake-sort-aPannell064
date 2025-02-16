@@ -1,12 +1,12 @@
 function flip(array, n) {
     //len = arrray.length();
-    var flipper = [];
+    var spatula = [];
     for(var i = 1; i < n+1 && array.length; i++) {
-        flipper.unshift(array.shift());
+        spatula .unshift(array.shift());
     }
 
-    while(flipper.length) {
-        array.unshift(flipper.pop());
+    while(spatula .length) {
+        array.unshift(spatula.pop());
     }
 
     return array;
