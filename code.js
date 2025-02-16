@@ -4,11 +4,9 @@ function flip(array, n) {
     for(var i = 1; i < n+1 && array.length; i++) {
         spatula.unshift(array.shift());
     }
-
     while(spatula .length) {
         array.unshift(spatula.pop());
     }
-
     return array;
 }
 
