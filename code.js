@@ -1,11 +1,7 @@
 function flip(array, n) {
-    //len = arrray.length();
-    var spatula = [];
-    for(var i = 1; i < n+1 && array.length; i++) {
-        spatula.unshift(array.shift());
-    }
-    while(spatula .length) {
-        array.unshift(spatula.pop());
+    var spatula = (n > array.length) ? array.length : n;
+    for(var i = Math.floor(spatula/2); i < spatula; i++) {
+        [array[i], array[spatula-i-1]] = [array[spatula-i-1], array[i]]
     }
     return array;
 }
