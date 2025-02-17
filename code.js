@@ -9,7 +9,7 @@ function flip(array, n) {
 // Use only flip() here to manipulate the array
 function pancakeSort(array) {
     var maxIndex;
-    for (var i = array.length-1; i >= 0; i--) {
+    for (var i = array.length-1; i > 0; i--) {
         maxIndex = i;
         for (var j = 0; j < i; j++) {
             if(array[j] > array[maxIndex]) {maxIndex = j;}
