@@ -47,6 +47,10 @@ goes from n to 1. This gives us 2(n-1).
 
 Number of flips = $\Theta(n)$
 
+For both of these values, the time complexity is independent of the input because
+both loops will iterate through their entirety regardless of the outcome of any
+compares. Therefore, worst case, best case, and average case are all the same. 
+
 "I certify that I have listed all sources used to complete this exercise, 
 including the use of any Large Language Models. All of the work is my own, 
 except where stated otherwise. I am aware that plagiarism carries severe 
