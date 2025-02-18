@@ -29,3 +29,30 @@ What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons of pancakes? What is it in terms of the number of flips?
 Add your answer to this markdown file.
 
+### Comparisons
+
+The pancake sort function starts with a loop that uses i to iterate backwards,
+stopping after i = 1. The next loop is nested and iterates from 0 to i. Each time 
+this loop occurs, one compare is made. Therefore, to get the complexity in terms of 
+compares, we have:
+
+$(n + n-1 + n-2 + . . . + 1) = \displaystyle\sum_{k=1} ^{n}{k} = \frac{n\cdot(n - 1)}{2}$
+
+Number of compares = $\Theta(n^2)$
+
+### Flips
+
+The flip functon is called twice for every occurance of the outer loop, which
+goes from n to 1. This gives us 2(n-1). 
+
+Number of flips = $\Theta(n)$
+
+For both of these values, the time complexity is independent of the input because
+both loops will iterate through their entirety regardless of the outcome of any
+compares. Therefore, worst case, best case, and average case are all the same. 
+
+"I certify that I have listed all sources used to complete this exercise, 
+including the use of any Large Language Models. All of the work is my own, 
+except where stated otherwise. I am aware that plagiarism carries severe 
+penalties and that if plagiarism is suspected, charges may be filed against 
+me without prior notice."
